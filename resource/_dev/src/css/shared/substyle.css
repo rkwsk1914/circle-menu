@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+#attention-mobile-page {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  width: 70%;
+}
+
+#map {
+  height: 60%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+img {
+  width: 80%;
+}
+
+section {
+  height: 100vh;
+  padding: 20px 0;
+}
+
+.sec1 {
+  background-image: url(../../img/shared/cafe.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sec2 {
+  background-color: white;
+}
+
+.sec3 {
+  background-color: #d4d4d4;
+}
+
+.sec4 {
+  background-color: white;
+}
+
+#cafe-page #rotating-menu {
+  border: none;
+}
+
+#cafe-page #rotating-menu > .item {
+  background-color: #fff;
+  color: #333;
+}
+
+#cafe-page #rotating-menu > .item.menu1 {
+  background-color: #7e2705;
+}
+
+#cafe-page #rotating-menu > #rotating-menu-button {
+  background-color: #a3803e;
+  color: #333;
+}
+
+#cafe-page #rotating-menu-door-button {
+  opacity: 1;
+  background-color: #a3803e;
+  color: #333;
+}

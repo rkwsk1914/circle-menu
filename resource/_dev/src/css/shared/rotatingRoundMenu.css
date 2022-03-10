@@ -1,0 +1,76 @@
+#rotating-menu {
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: fixed;
+    border: 1px #333 solid;
+    bottom: -60px;
+    z-index: 30;
+    opacity: 0;
+}
+
+#rotating-menu > .item {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 16px;
+    opacity: 0.8;
+    border-radius: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+
+#rotating-menu > .item:nth-child(n + 2) {
+    background-color: blue;
+}
+
+#rotating-menu > #rotating-menu-button {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.8;
+    background-color: blue;
+    color: white;
+    border: none;
+    transition-property: width, height, line-height, transform;
+    transition-timing-function: linear;
+    outline: none;
+}
+
+#rotating-menu-door-button {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 16px;
+    border-radius: 50%;
+    position: fixed;
+    opacity: 0.8;
+    background-color: green;
+    color: white;
+    border: none;
+    transition-property: width, height, line-height, transform;
+    transition-timing-function: linear;
+    outline: none;
+    z-index: 30;
+    display: block;
+}
+
+#rotating-menu-back-ground {
+    position: fixed;
+    display: block;
+    opacity: 0;
+    transition-property: opacity;
+    transition-timing-function: linear;
+    pointer-events: none;
+    z-index: 25;
+    background-color: black;
+    top: 0;
+}
